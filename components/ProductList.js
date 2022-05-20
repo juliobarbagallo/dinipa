@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function ProductList(props) {
+  const backGround = useColorModeValue("white", "gray.800");
   return (
     <Center>
       <Wrap spacing="30px" ml={"90px"}>
@@ -23,7 +24,7 @@ export default function ProductList(props) {
                 p={6}
                 maxW={"330px"}
                 w={"full"}
-                bg={useColorModeValue("white", "gray.800")}
+                bg={backGround}
                 boxShadow={"2xl"}
                 rounded={"lg"}
                 pos={"relative"}
