@@ -160,18 +160,22 @@ export default function Equipo({ equipo }) {
 
                   <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <List spacing={2}>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
-                          <BsWhatsapp />
-                        </Text>{" "}
-                        Whatsapp
-                      </ListItem>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
-                          <BsQuestionCircle />
-                        </Text>{" "}
-                        Preguntas frecuentes
-                      </ListItem>
+                      <Link href="/whatsapp/Whatsapp">
+                        <ListItem cursor={"pointer"}>
+                          <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
+                            <BsWhatsapp />
+                          </Text>{" "}
+                          <a>Whatsapp</a>
+                        </ListItem>
+                      </Link>
+                      <Link href="/faq/Faq">
+                        <ListItem cursor={"pointer"}>
+                          <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
+                            <BsQuestionCircle />
+                          </Text>{" "}
+                          Preguntas frecuentes
+                        </ListItem>
+                      </Link>
                       <ListItem>
                         <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <SiReadthedocs />
@@ -237,7 +241,6 @@ export default function Equipo({ equipo }) {
             </Stack>
           </SimpleGrid>
         </Container>
-        );
       </main>
       <Footer />
     </div>
