@@ -161,19 +161,19 @@ export default function Equipo({ equipo }) {
                   <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <List spacing={2}>
                       <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"25"}>
+                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <BsWhatsapp />
                         </Text>{" "}
                         Whatsapp
                       </ListItem>
                       <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"25"}>
+                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <BsQuestionCircle />
                         </Text>{" "}
                         Preguntas frecuentes
                       </ListItem>
                       <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"25"}>
+                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <SiReadthedocs />
                         </Text>{" "}
                         Manual de Usaurio
@@ -181,19 +181,19 @@ export default function Equipo({ equipo }) {
                     </List>
                     <List spacing={2}>
                       <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"25"}>
+                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <VscReport />
                         </Text>{" "}
                         Reportar inconveniente
                       </ListItem>
                       <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"25"}>
+                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <BsCart3 />
                         </Text>{" "}
                         Pedidos
                       </ListItem>
                       <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"25"}>
+                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <BsInfoCircle />
                         </Text>{" "}
                         Más información
