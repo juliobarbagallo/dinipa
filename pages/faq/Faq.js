@@ -65,10 +65,11 @@ export default function Faq() {
               Evitar muñecas y tobillos cuando sea posible.
             </Text>
             <Divider />
-            <AspectRatio maxW="560px" ratio={1}>
+            <AspectRatio maxW="860px" maxH={"600px"} ratio={1}>
               <iframe
                 title="Operation Video of Patient Monitors - Venus"
-                src="https://youtu.be/lAglthJXx4o"
+                src="https://www.youtube.com/embed/lAglthJXx4o"
+                // src="https://www.youtube.com/embed/QhBnZ6NPOY0"
                 allowFullScreen
               />
             </AspectRatio>
