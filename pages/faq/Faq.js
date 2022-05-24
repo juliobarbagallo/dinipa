@@ -55,7 +55,7 @@ export default function Faq() {
           <ModalHeader>¿Cómo conectar al paciente a mi monitor?</ModalHeader>
           <ModalCloseButton />
           <ModalBody textAlign={"-webkit-center"}>
-            <Text w={"40%"} color={"gray.500"}>
+            <Text w={"80%"} color={"gray.500"}>
               El sensor se coloca normalmente en el dedo índice del paciente y
               se conecta al cable que va con el monitor.
               <br /> Los NO sobre la ubicación de los electrodos.

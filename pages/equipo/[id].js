@@ -176,12 +176,19 @@ export default function Equipo({ equipo }) {
                           Preguntas frecuentes
                         </ListItem>
                       </Link>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
-                          <SiReadthedocs />
-                        </Text>{" "}
-                        Manual de Usaurio
-                      </ListItem>
+                      <Link
+                        href="https://drive.google.com/file/d/1r5gsCCi7masKtG6whlmhFq86R9ry9qqW/view"
+                        passHref={true}
+                      >
+                        <ListItem cursor={"pointer"}>
+                          <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
+                            <SiReadthedocs />
+                          </Text>{" "}
+                          <a target="_blank" rel="noreferrer">
+                            Manual de Usaurio
+                          </a>
+                        </ListItem>
+                      </Link>
                     </List>
                     <List spacing={2}>
                       <ListItem>
