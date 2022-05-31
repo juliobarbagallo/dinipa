@@ -191,24 +191,28 @@ export default function Equipo({ equipo }) {
                       </Link>
                     </List>
                     <List spacing={2}>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
-                          <VscReport />
-                        </Text>{" "}
-                        Reportar inconveniente
-                      </ListItem>
+                      <Link href="/Report/Report">
+                        <ListItem cursor={"pointer"}>
+                          <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
+                            <VscReport />
+                          </Text>{" "}
+                          Reportar inconveniente
+                        </ListItem>
+                      </Link>
                       <ListItem>
                         <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                           <BsCart3 />
                         </Text>{" "}
                         Pedidos
                       </ListItem>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
-                          <BsInfoCircle />
-                        </Text>{" "}
-                        Más información
-                      </ListItem>
+                      <Link href="/More/MoreInfo">
+                        <ListItem cursor={"pointer"}>
+                          <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
+                            <BsInfoCircle />
+                          </Text>{" "}
+                          Más información
+                        </ListItem>
+                      </Link>
                       {/* <ListItem>
                       <Text as={"span"} fontWeight={"bold"}>
                         Water resistance:
