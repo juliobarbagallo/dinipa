@@ -154,7 +154,11 @@ export default function Report() {
                       <FormLabel>Nombre y apellido:</FormLabel>
 
                       <InputGroup>
-                        <InputLeftElement children={<BsPerson />} />
+                        {/* <InputLeftElement children={<BsPerson />} /> */}
+                        <InputLeftElement>
+                          {" "}
+                          <BsPerson />{" "}
+                        </InputLeftElement>
                         <Input
                           type="text"
                           name="nombre"
@@ -167,7 +171,11 @@ export default function Report() {
                       <FormLabel>Email:</FormLabel>
 
                       <InputGroup>
-                        <InputLeftElement children={<MdOutlineEmail />} />
+                        {/* <InputLeftElement children={<MdOutlineEmail />} /> */}
+                        <InputLeftElement>
+                          {" "}
+                          <MdOutlineEmail />{" "}
+                        </InputLeftElement>
                         <Input type="email" name="email" placeholder="Email" />
                       </InputGroup>
                     </FormControl>
