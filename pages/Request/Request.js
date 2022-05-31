@@ -70,7 +70,7 @@ export default function Request() {
                 ¿Qué necesita? Está requiriendo un presupuesto, no una compra.
               </Heading>
 
-              <Button as="a" href="https://chakra-ui.com/docs/getting-started">
+              <Button as="a" href="https://dinipamedical.com/">
                 Necesito otro equipo Northern Meditec
               </Button>
 
