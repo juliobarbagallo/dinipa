@@ -199,12 +199,14 @@ export default function Equipo({ equipo }) {
                           Reportar inconveniente
                         </ListItem>
                       </Link>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
-                          <BsCart3 />
-                        </Text>{" "}
-                        Pedidos
-                      </ListItem>
+                      <Link href="/Request/Request">
+                        <ListItem cursor={"pointer"}>
+                          <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
+                            <BsCart3 />
+                          </Text>{" "}
+                          Pedidos
+                        </ListItem>
+                      </Link>
                       <Link href="/More/MoreInfo">
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>

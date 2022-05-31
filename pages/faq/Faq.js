@@ -43,7 +43,7 @@ export default function Faq() {
           Electrodos cerca del corazón. Evitar muñecas y tobillos cuando sea
           posible.
         </Text>
-        <Button onClick={onOpen}>
+        <Button onClick={onOpen} marginTop={"20px"}>
           <Text fontSize="sm">Ver más</Text>
         </Button>
       </Box>
