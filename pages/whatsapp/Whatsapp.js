@@ -12,12 +12,16 @@ import {
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
+
 export default function Whatsapp() {
   const backGround1 = useColorModeValue("gray.50", "gray.800");
   const backGround2 = useColorModeValue("white", "gray.700");
   const [fullname, setFullname] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState('');  
+  const router = useRouter();
+  const data = router.query;
   return (
     <div className="container">
       <NavBar />
@@ -73,7 +77,7 @@ export default function Whatsapp() {
                       bg: "blue.500",
                     }}
                   >
-                  <a target="_blank" href={`https://api.whatsapp.com/send?phone=+5491152635899&text=%20Hola mi nombre es ${fullname} y mi correo: ${email}. ${message}`} rel="noopener noreferrer">
+                  <a target="_blank" href={`https://api.whatsapp.com/send?phone=+5491152635899&text=%20Hola mi nombre es ${fullname} y mi correo: ${email}. Equipo: ${data.equipo} ${message}`} rel="noopener noreferrer">
                     Abrir Whatsapp
                   </a> 
                 </Button>
