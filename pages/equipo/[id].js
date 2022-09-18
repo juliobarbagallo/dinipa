@@ -1,19 +1,14 @@
-import { equipos, equiposDb } from "../../assets/data";
-
+import { equipos } from "../../assets/data";
 import Link from "next/link";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-
 import {
-  Box,
-  chakra,
+  Box,  
   Container,
   Stack,
   Text,
   Image,
   Flex,
-  VStack,
-  Button,
   Heading,
   SimpleGrid,
   StackDivider,
@@ -195,21 +190,17 @@ export default function Equipo({ equipo }) {
                         </ListItem>
                       </Link>              
                     </List>               
-                  </SimpleGrid>
-                          
+                  </SimpleGrid>                          
                 </Box>
                 <List>
                   <Link
-                        href="/"
-                        
+                        href="/"                        
                       >
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                             <TiArrowBack />
-                          </Text>{" "}
-                          
-                            Volver al listado.
-                          
+                          </Text>{" "}                        
+                            Volver al listado.                          
                         </ListItem>
                       </Link></List>   
               </Stack>

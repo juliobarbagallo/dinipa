@@ -9,7 +9,6 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
-  useClipboard,
   useColorModeValue,
   VStack,
   Stack,
@@ -98,9 +97,7 @@ export default function Request() {
                   <VStack spacing={5}>
                     <FormControl isRequired>
                       <FormLabel>Nombre y apellido:</FormLabel>
-
-                      <InputGroup>
-                        {/* <InputLeftElement children={<BsPerson />} /> */}
+                      <InputGroup>                        
                         <InputLeftElement>
                           {" "}
                           <BsPerson />{" "}
@@ -112,12 +109,10 @@ export default function Request() {
                         />
                       </InputGroup>
                     </FormControl>
-
                     <FormControl isRequired>
                       <FormLabel>Email:</FormLabel>
 
-                      <InputGroup>
-                        {/* <InputLeftElement children={<MdOutlineEmail />} /> */}
+                      <InputGroup>                        
                         <InputLeftElement>
                           {" "}
                           <MdOutlineEmail />{" "}
@@ -128,7 +123,6 @@ export default function Request() {
 
                     <FormControl isRequired>
                       <FormLabel>Comentario:</FormLabel>
-
                       <Textarea
                         name="message"
                         placeholder="Consulta o inconveniente"
@@ -136,7 +130,6 @@ export default function Request() {
                         resize="none"
                       />
                     </FormControl>
-
                     <Button
                       colorScheme="blue"
                       bg="blue.400"

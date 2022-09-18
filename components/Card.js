@@ -4,20 +4,13 @@ import {
   Center,
   useColorModeValue,
   Heading,
-  Text,
   Stack,
   Image,
-  Wrap,
   WrapItem,
 } from "@chakra-ui/react";
 
 function Card(props) {
   const backGround = useColorModeValue("white", "gray.800");
-  let boxBg = useColorModeValue("white !important", "#111c44 !important");
-  let secondaryBg = useColorModeValue("gray.50", "whiteAlpha.100");
-  let mainText = useColorModeValue("gray.800", "white");
-  let iconBox = useColorModeValue("gray.100", "whiteAlpha.200");
-  let iconColor = useColorModeValue("brand.200", "white");
   return (
 <WrapItem key={props.equipo.id}>
             <Center>
@@ -35,8 +28,7 @@ function Card(props) {
                 zIndex={1}
               >
                 <Box
-                  rounded={"lg"}
-                  // mt={-12}
+                  rounded={"lg"}                  
                   pos={"relative"}
                   height={"230px"}
                   _after={{
@@ -46,8 +38,7 @@ function Card(props) {
                     h: "full",
                     pos: "absolute",
                     top: 5,
-                    left: 0,
-                    // backgroundImage: `url(${IMAGE})`,
+                    left: 0,                    
                     backgroundImage: `url(${props.equipo.imagen})`,
                     filter: "blur(15px)",
                     zIndex: -1,
@@ -62,13 +53,11 @@ function Card(props) {
                     rounded={"lg"}
                     height={230}
                     width={282}
-                    objectFit={"cover"}
-                    // src={IMAGE}
+                    objectFit={"cover"}                    
                     src={props.equipo.imagen}
                   />
                 </Box>
-                <Stack pt={10} align={"center"}>
-                  {/* <Link href="/equipo/[id]" as={`/equipo/${props.equipo.id}`}> */}
+                <Stack pt={10} align={"center"}>                  
                     <Heading
                       cursor={"pointer"}
                       fontSize={"2xl"}
@@ -77,15 +66,6 @@ function Card(props) {
                     >
                       <a> {props.equipo.nombre}</a>
                     </Heading>
-                  {/* </Link> */}
-                  {/* <Stack direction={"row"} align={"center"}>
-                    <Text fontWeight={800} fontSize={"xl"}>
-                      $57
-                    </Text>
-                    <Text textDecoration={"line-through"} color={"gray.600"}>
-                      $199
-                    </Text>
-                  </Stack> */}
                 </Stack>
               </Box>
               </Link>

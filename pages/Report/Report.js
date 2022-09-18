@@ -191,13 +191,6 @@ export default function Report() {
                           }}
                         />
                       </InputGroup>
-                      {/* {!isError ? (
-                        <FormHelperText>
-                          Enter the email you'd like to receive the newsletter on.
-                        </FormHelperText>
-                      ) : (
-                        <FormErrorMessage>Email is required.</FormErrorMessage>
-                      )} */}
                     </FormControl>
                     <FormControl isRequired>
                       <FormLabel>Consulta o inconveniente:</FormLabel>
@@ -210,10 +203,8 @@ export default function Report() {
                         onChange={(e) => {
                           setMessage(e.target.value);
                         }}
-                      />
-                      
+                      />                      
                     </FormControl>
-
                     <Button
                       isLoading={submitted}
                       loadingText="Submitting"

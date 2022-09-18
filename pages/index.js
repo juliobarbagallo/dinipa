@@ -14,8 +14,7 @@ export const getStaticProps = async () => {
 };
 
 export default function Home(equiposList) {
-  return (
-    // <div className={styles.container}>
+  return (    
     <div>
       <Head>
         <title>Dinpa Medical</title>
@@ -26,7 +25,6 @@ export default function Home(equiposList) {
       <main className={styles.main}>
         <ProductList equiposList={equiposList.equiposList} />
       </main>
-
       <Footer />
     </div>
   );
