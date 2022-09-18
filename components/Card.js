@@ -21,7 +21,9 @@ function Card(props) {
   return (
 <WrapItem key={props.equipo.id}>
             <Center>
+            <Link href="/equipo/[id]" as={`/equipo/${props.equipo.id}`}>
               <Box
+                cursor={"pointer"}
                 role={"group"}
                 p={6}
                 maxW={"330px"}
@@ -66,7 +68,7 @@ function Card(props) {
                   />
                 </Box>
                 <Stack pt={10} align={"center"}>
-                  <Link href="/equipo/[id]" as={`/equipo/${props.equipo.id}`}>
+                  {/* <Link href="/equipo/[id]" as={`/equipo/${props.equipo.id}`}> */}
                     <Heading
                       cursor={"pointer"}
                       fontSize={"2xl"}
@@ -75,7 +77,7 @@ function Card(props) {
                     >
                       <a> {props.equipo.nombre}</a>
                     </Heading>
-                  </Link>
+                  {/* </Link> */}
                   {/* <Stack direction={"row"} align={"center"}>
                     <Text fontWeight={800} fontSize={"xl"}>
                       $57
@@ -86,6 +88,7 @@ function Card(props) {
                   </Stack> */}
                 </Stack>
               </Box>
+              </Link>
             </Center>
           </WrapItem>
   );
