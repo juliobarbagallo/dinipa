@@ -2,18 +2,18 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
+  // Link,
   IconButton,
   useDisclosure,
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-
-// const Links = ["Dashboard", "Projects", "Team"];
-const Links = [""];
+import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
+import Link from "next/link";
 
 const NavLink = ({ children }) => (
+  
   <Link
     px={2}
     py={1}
@@ -22,7 +22,7 @@ const NavLink = ({ children }) => (
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
-    href={"#"}
+    href="algo"
   >
     {children}
   </Link>
@@ -42,16 +42,43 @@ export default function NavBar() {
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack spacing={8} alignItems={"center"}>
-            <Box>Dinipa Medical</Box>
+          <HStack spacing={8} alignItems={"center"} >
+            <Link href="/"><Box cursor={"pointer"}>Dinipa Medical</Box></Link>
             <HStack
               as={"nav"}
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+              <NavLink>
+                <Link
+                  href="https://facebook.com/dinipamedical/"
+                  passHref={true}               
+                >
+                  <a target="_blank" rel="noreferrer">
+                    {<BsFacebook size={30} />}
+                  </a>
+                </Link>
+              </NavLink>
+              <NavLink>
+                <Link
+                  href="https://instagram.com/dinipamedical/"
+                  passHref={true}               
+                >
+                  <a target="_blank" rel="noreferrer">
+                    {<BsInstagram size={30} />}
+                  </a>
+                </Link>
+              </NavLink>
+              <NavLink>
+                <Link
+                  href="https://www.youtube.com/channel/UCmS0vMle67z63R08bNI2Pnw"
+                  passHref={true}               
+                >
+                  <a target="_blank" rel="noreferrer">
+                    {<BsYoutube size={30} />}
+                  </a>
+                </Link>
+              </NavLink>
             </HStack>
           </HStack>
         </Flex>
@@ -59,15 +86,43 @@ export default function NavBar() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
-              ))}
+              ))} */}
+              <NavLink>
+                <Link
+                  href="https://facebook.com/dinipamedical/"
+                  passHref={true}               
+                >
+                  <a target="_blank" rel="noreferrer">
+                    {<BsFacebook size={30} />}
+                  </a>
+                </Link>
+              </NavLink>
+              <NavLink>
+                <Link
+                  href="https://instagram.com/dinipamedical/"
+                  passHref={true}               
+                >
+                  <a target="_blank" rel="noreferrer">
+                    {<BsInstagram size={30}/>}
+                  </a>
+                </Link>
+              </NavLink>
+              <NavLink>
+                <Link
+                  href="https://www.youtube.com/channel/UCmS0vMle67z63R08bNI2Pnw"
+                  passHref={true}               
+                >
+                  <a target="_blank" rel="noreferrer">
+                    {<BsYoutube size={30} />}
+                  </a>
+                </Link>
+              </NavLink>
             </Stack>
           </Box>
         ) : null}
       </Box>
-
-      {/* <Box p={4}>Main Content Here</Box> */}
     </>
   );
 }
