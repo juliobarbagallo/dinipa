@@ -85,13 +85,6 @@ export default function Equipo({ equipo }) {
                 >
                   {equipo.nombre}
                 </Heading>
-                {/* <Text
-                  color={useColorModeValue("gray.900", "gray.400")}
-                  fontWeight={300}
-                  fontSize={"2xl"}
-                >
-                  $350.00 USD
-                </Text> */}
               </Box>
 
               <Stack
@@ -103,18 +96,10 @@ export default function Equipo({ equipo }) {
                   />
                 }
               >
-                <VStack spacing={{ base: 4, sm: 6 }}>
-                  {/* <Text
-                    color={useColorModeValue("gray.500", "gray.400")}
-                    fontSize={"2xl"}
-                    fontWeight={"300"}
-                  >
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore
-                  </Text> */}
+                {/* <VStack spacing={{ base: 4, sm: 6 }}>
                   <Text fontSize={"lg"}>{equipo.descripcion}</Text>
-                </VStack>
-                <Box>
+                </VStack> */}
+                {/* <Box>
                   <Text
                     fontSize={{ base: "16px", lg: "18px" }}
                     color={useColorModeValue("yellow.500", "yellow.300")}
@@ -146,18 +131,8 @@ export default function Equipo({ equipo }) {
                       <ListItem>Modo de purga automática</ListItem>
                     </List>
                   </SimpleGrid>
-                </Box>
+                </Box> */}
                 <Box>
-                  {/* <Text
-                    fontSize={{ base: "16px", lg: "18px" }}
-                    color={useColorModeValue("yellow.500", "yellow.300")}
-                    fontWeight={"500"}
-                    textTransform={"uppercase"}
-                    mb={"4"}
-                  >
-                    Detalles del producto
-                  </Text> */}
-
                   <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <List spacing={2}>
                       <Link href="/whatsapp/Whatsapp">
@@ -207,50 +182,19 @@ export default function Equipo({ equipo }) {
                           Pedidos
                         </ListItem>
                       </Link>
-                      <Link href="/More/MoreInfo">
+                      {/* <Link href="/More/MoreInfo"> */}
+                      <Link href="/descripcion/[id]" as={`/descripcion/${equipo.id}`}>
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                             <BsInfoCircle />
                           </Text>{" "}
-                          Más información
+                          Descripción del equipo
                         </ListItem>
                       </Link>
-                      {/* <ListItem>
-                      <Text as={"span"} fontWeight={"bold"}>
-                        Water resistance:
-                      </Text>{" "}
-                      5 bar (50 metres / 167 feet){" "}
-                    </ListItem> */}
                     </List>
                   </SimpleGrid>
                 </Box>
               </Stack>
-
-              {/* <Button
-                rounded={"none"}
-                w={"full"}
-                mt={8}
-                size={"lg"}
-                py={"7"}
-                bg={useColorModeValue("gray.900", "gray.50")}
-                color={useColorModeValue("white", "gray.900")}
-                textTransform={"uppercase"}
-                _hover={{
-                  transform: "translateY(2px)",
-                  boxShadow: "lg",
-                }}
-              >
-                Add to cart
-              </Button> */}
-
-              {/* <Stack
-                direction="row"
-                alignItems="center"
-                justifyContent={"center"}
-              >
-                <MdLocalShipping />
-                <Text>2-3 business days delivery</Text>
-              </Stack> */}
             </Stack>
           </SimpleGrid>
         </Container>

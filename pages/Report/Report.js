@@ -110,7 +110,7 @@ export default function Report() {
   return (
     <>
       <NavBar />
-      <Flex
+      <Flex      
         bg={bg}
         align="center"
         justify="center"
@@ -121,6 +121,7 @@ export default function Report() {
         id="contact"
       >
         <Box
+          w={'100%'} 
           borderRadius="lg"
           m={{ base: 5, md: 16, lg: 10 }}
           p={{ base: 5, lg: 16 }}
@@ -136,6 +137,7 @@ export default function Report() {
                 Reportar inconveniente
               </Heading>
               <Stack
+                w={'60%'}
                 spacing={{ base: 4, md: 8, lg: 20 }}
                 direction={{ base: "column", md: "row" }}
               >
@@ -146,6 +148,7 @@ export default function Report() {
                 >                 
                 </Stack>
                 <Box
+                  w={'100%'}
                   bg={bgBox}
                   borderRadius="lg"
                   p={8}
