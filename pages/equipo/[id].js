@@ -159,7 +159,7 @@ export default function Equipo({ equipo }) {
                             <SiReadthedocs />
                           </Text>{" "}
                           <a target="_blank" rel="noreferrer">
-                            Manual de Usaurio
+                            Manual de Usuario
                           </a>
                         </ListItem>
                       </Link>
