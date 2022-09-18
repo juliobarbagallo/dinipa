@@ -29,6 +29,7 @@ import {
 import { SiReadthedocs } from "react-icons/si";
 import { VscReport } from "react-icons/vsc";
 import { GrCatalog } from "react-icons/gr";
+import { TiArrowBack } from "react-icons/ti";
 
 export const getStaticProps = async ({ params }) => {
   const equipo = equipos.filter((equipo) => equipo.id === params.id);
@@ -192,10 +193,25 @@ export default function Equipo({ equipo }) {
                             Descripción del equipo
                           </a>
                         </ListItem>
-                      </Link>
-                    </List>
+                      </Link>              
+                    </List>               
                   </SimpleGrid>
+                          
                 </Box>
+                <List>
+                  <Link
+                        href="/"
+                        
+                      >
+                        <ListItem cursor={"pointer"}>
+                          <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
+                            <TiArrowBack />
+                          </Text>{" "}
+                          
+                            Volver al listado.
+                          
+                        </ListItem>
+                      </Link></List>   
               </Stack>
             </Stack>
           </SimpleGrid>
