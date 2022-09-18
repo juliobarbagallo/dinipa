@@ -17,16 +17,9 @@ import { Heading } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { AspectRatio } from "@chakra-ui/react";
-// import { useState } from "react";
 
 export default function Faq() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  //   const [size, setSize] = useState("full");
-
-  //   const handleSizeClick = (newSize) => {
-  //     setSize(newSize);
-  //     onOpen();
-  //   };
   return (
     <div className="container">
       <NavBar />
@@ -68,8 +61,7 @@ export default function Faq() {
             <AspectRatio maxW="860px" maxH={"600px"} ratio={1}>
               <iframe
                 title="Operation Video of Patient Monitors - Venus"
-                src="https://www.youtube.com/embed/lAglthJXx4o"
-                // src="https://www.youtube.com/embed/QhBnZ6NPOY0"
+                src="https://www.youtube.com/embed/lAglthJXx4o"                
                 allowFullScreen
               />
             </AspectRatio>
