@@ -76,14 +76,14 @@ function Card(props) {
                       <a> {props.equipo.nombre}</a>
                     </Heading>
                   </Link>
-                  <Stack direction={"row"} align={"center"}>
+                  {/* <Stack direction={"row"} align={"center"}>
                     <Text fontWeight={800} fontSize={"xl"}>
                       $57
                     </Text>
                     <Text textDecoration={"line-through"} color={"gray.600"}>
                       $199
                     </Text>
-                  </Stack>
+                  </Stack> */}
                 </Stack>
               </Box>
             </Center>

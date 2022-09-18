@@ -18,7 +18,6 @@ import {
   SimpleGrid,
   StackDivider,
   useColorModeValue,
-  VisuallyHidden,
   List,
   ListItem,
 } from "@chakra-ui/react";
@@ -26,12 +25,10 @@ import {
   BsWhatsapp,
   BsQuestionCircle,
   BsCart3,
-  BsInfoCircle,
 } from "react-icons/bs";
 import { SiReadthedocs } from "react-icons/si";
 import { VscReport } from "react-icons/vsc";
-// import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-// import { MdLocalShipping } from "react-icons/md";
+import { GrCatalog } from "react-icons/gr";
 
 export const getStaticProps = async ({ params }) => {
   const equipo = equipos.filter((equipo) => equipo.id === params.id);
@@ -55,6 +52,7 @@ export const getStaticPaths = async () => {
 };
 
 export default function Equipo({ equipo }) {
+  console.log(equipo, '  EQUIPO')
   return (
     <div className="container">
       <NavBar />
@@ -181,14 +179,18 @@ export default function Equipo({ equipo }) {
                           </Text>{" "}
                           Pedidos
                         </ListItem>
-                      </Link>
-                      {/* <Link href="/More/MoreInfo"> */}
-                      <Link href="/descripcion/[id]" as={`/descripcion/${equipo.id}`}>
+                      </Link>                      
+                      <Link
+                        href={equipo.catalogo}
+                        passHref={true}
+                      >
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
-                            <BsInfoCircle />
+                            <GrCatalog />
                           </Text>{" "}
-                          Descripción del equipo
+                          <a target="_blank" rel="noreferrer">
+                            Descripción del equipo
+                          </a>
                         </ListItem>
                       </Link>
                     </List>
