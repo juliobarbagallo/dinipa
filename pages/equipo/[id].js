@@ -151,7 +151,7 @@ export default function Equipo({ equipo }) {
                         </ListItem>
                       </Link>
                       <Link
-                        href="https://drive.google.com/file/d/1r5gsCCi7masKtG6whlmhFq86R9ry9qqW/view"
+                        href={equipo.Manual}
                         passHref={true}
                       >
                         <ListItem cursor={"pointer"}>
