@@ -129,7 +129,12 @@ export default function Equipo({ equipo }) {
                 <Box>
                   <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <List spacing={2}>
-                      <Link href="/whatsapp/Whatsapp">
+                      <Link
+                        href={{
+                          pathname: "/whatsapp/Whatsapp",
+                          query: {equipo: equipo.nombre},
+                        }}
+                      >
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                             <BsWhatsapp />
