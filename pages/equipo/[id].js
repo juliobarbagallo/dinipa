@@ -48,7 +48,7 @@ export const getStaticPaths = async () => {
 };
 
 export default function Equipo({ equipo }) {
-  console.log(equipo, '  EQUIPO')
+  // console.log(equipo, '  EQUIPO')
   return (
     <div className="container">
       <NavBar />
