@@ -72,7 +72,7 @@ export default function Report() {
     }
 
     setErrors({ ...tempErrors });
-    console.log("errors", errors);
+    // console.log("errors", errors);
     return isValid;
   };
 
