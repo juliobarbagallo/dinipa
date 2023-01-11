@@ -27,7 +27,7 @@ export const equipos = [
     caracteristicas: ["caracteristica 1", "caracteristica 2" ],
     imagen: "/TCI-7.png",
     catalogo: "https://drive.google.com/file/d/13BdO544d6fIo_aZysPLoZ-ZW6rn9JuMF/view?usp=sharing",
-    Manual:"https://drive.google.com/file/d/1F9OjYZ9BQPjkHW1Ljx3Y9e4YG44zPaq7/view?usp=sharing" ,
+    Manual:"https://drive.google.com/file/d/1GBw2YCZo6DLNQ8CKCeF5ThJZeKJnouWg/view?usp=sharing" ,
   },
   {
     id: "equipo4",
@@ -117,7 +117,7 @@ export const equipos = [
     caracteristicas: ["caracteristica 1", "caracteristica 2" ],
     imagen: "/kt88.jpg",
     catalogo: "https://drive.google.com/file/d/1TRVmi0DkimzrvcjfNuqpljgg5lNlIf1g/view?usp=sharing",
-    Manual:"https://drive.google.com/file/d/1b-59NKFMeAHJPbJBiJ_Wj1Ziklgrk7_T/view?usp=sharing" ,
+    Manual:"https://drive.google.com/file/d/1FUYlFZ1OkcO_popDyGa9iXUD2ASL7MqZ/view?usp=sharing" ,
   },
  {
     id: "equipo13",
@@ -127,7 +127,7 @@ export const equipos = [
     caracteristicas: ["caracteristica 1", "caracteristica 2" ],
     imagen: "/kt882400.jpg",
     catalogo: "https://drive.google.com/file/d/1jIsdirUkDpqcX52prnQC64_v8Tpw9Umx/view?usp=sharing",
-    Manual:"https://drive.google.com/file/d/1bBDvAlVo-XIBiYFuY4bpgu2tE1oAk5dJ/view?usp=sharing" ,
+    Manual:"https://drive.google.com/file/d/1wjDi_lOSiIiDm3EWeXsG-MWHlWd0T66b/view?usp=sharing" ,
   },
  {
     id: "equipo14",
