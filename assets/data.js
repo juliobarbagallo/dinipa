@@ -8,6 +8,7 @@ export const equipos = [
     imagen: "/S7 SIDE.png",
     catalogo: "https://drive.google.com/file/d/1AJvK2DQKoKGH8TkfPwEaduNbguBD5NdD/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1WdKHk-Tw7KF3AzY_VR4ebMI4bo4HOsVR/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/otros/",
   },
   {
     id: "equipo2",
@@ -18,6 +19,7 @@ export const equipos = [
     imagen: "/i7 SIDE (1).png",
     catalogo: "https://drive.google.com/file/d/1XQNhYnym0UxceWjcWD18UtlsuUaI-V5E/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1sltZ5LF4-bCzOG9EhzoEoyAkFzIte9_e/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/otros/",
   },
   {
     id: "equipo3",
@@ -28,6 +30,7 @@ export const equipos = [
     imagen: "/TCI-7.png",
     catalogo: "https://drive.google.com/file/d/13BdO544d6fIo_aZysPLoZ-ZW6rn9JuMF/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1GBw2YCZo6DLNQ8CKCeF5ThJZeKJnouWg/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/otros/",
   },
   {
     id: "equipo4",
@@ -38,6 +41,7 @@ export const equipos = [
     imagen: "/Infu.jpg",
     catalogo: "https://drive.google.com/file/d/1imOmE2Q9QmHJNCphyOKRZNMGTVtvJdI0/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/14JJ7-kIGTIB1f4nsjRzUEwmE3z9y8jJ1/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/otros/",
   },
   {
     id: "equipo5",
@@ -78,6 +82,7 @@ export const equipos = [
     imagen: "/ecg90.jpg",
     catalogo: "https://drive.google.com/file/d/1J33OcgZutGYNVXoHSaKT_f6ZHO0jhD4p/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/17H1oK0nKaBw8GYEGoi_n8yAisF-ujJzm/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/electrocardiografos/",
   },
  {
     id: "equipo9",
@@ -88,6 +93,7 @@ export const equipos = [
     imagen: "/ECG100.jpg",
     catalogo: "https://drive.google.com/file/d/1p_XsZQA4wn2u7B5-1lXGnwkChUyQCEzx/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1X8TrzYJreKFZt9foZZlsuqDQMrmiYrod/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/electrocardiografos/",
   },
  {
     id: "equipo10",
@@ -108,6 +114,7 @@ export const equipos = [
     imagen: "/ecg600.jpg",
     catalogo: "https://drive.google.com/file/d/1t9y-XwiOIww1sSGJanimb78ne8s0czK6/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1XbGtX-lu0I-_zWLqYLYh_hPlx4Zc8dkW/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/electrocardiografos/",
   },
  {
     id: "equipo12",
@@ -148,6 +155,7 @@ export const equipos = [
     imagen: "/fullv6.png",
     catalogo: "https://drive.google.com/file/d/15Ty2oVU2bqdayS6e793eOsJNgU-Qw6m5/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1z5dWCV4E1Ctozjhp6M1bfKVQHUbyt9s6/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/cuidado-salud/",
   },
 {
     id: "equipo16",
@@ -158,6 +166,7 @@ export const equipos = [
     imagen: "/fullv7.png",
     catalogo: "https://drive.google.com/file/d/1i2jb4N3pn0WAQTuks7ri-OylC_b5gqml/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1z5dWCV4E1Ctozjhp6M1bfKVQHUbyt9s6/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/cuidado-salud/",
   },
 {
     id: "equipo17",
@@ -168,6 +177,7 @@ export const equipos = [
     imagen: "/fullv9.jpg",
     catalogo: "https://drive.google.com/file/d/1hst2YiX5B_t22ALWl17nl5ww8S1RJdrl/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1TRS2vYaptewP71foCVhklPaGc5yfCXgm/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/cuidado-salud/",
   },
 {
     id: "equipo18",
@@ -178,6 +188,7 @@ export const equipos = [
     imagen: "/Q8.jpg",
     catalogo: "https://drive.google.com/file/d/128PPckY54ld-QwK6RczsbEtLDqpLMsYZ/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1EoOiMdPX6gwvUQF8-tLaNWUWa6vpvV9v/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/otros/",
   },
 {
     id: "equipo19",
@@ -188,6 +199,7 @@ export const equipos = [
     imagen: "/Q12.jpg",
     catalogo: "https://drive.google.com/file/d/1_LeG1X52V_UHY6S0dxXeatRH4hXk2FAl/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1fK_uKlyzw3d3rOQPxgKVMpAZt7mVPJmq/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/otros/",
   },
 {
     id: "equipo20",
@@ -198,6 +210,7 @@ export const equipos = [
     imagen: "/Q15.png",
     catalogo: "https://drive.google.com/file/d/1PzgTJLcKafIIsZRUHd6zpno7YeqOld9Q/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1REL3LmcgRnFabkEJhGIsb3H2wbmwqhS5/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/otros/",
   },
 {
     id: "equipo21",
@@ -208,5 +221,6 @@ export const equipos = [
     imagen: "/Q15a.JPG",
     catalogo: "https://drive.google.com/file/d/1jFZs-1a0vBGr1HA5dLaFihbPdR2gJK-p/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1WgIhrxtrs99x_leQi2ulbvWApHzM133t/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/otros/",
   },
 ];
