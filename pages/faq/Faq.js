@@ -33,8 +33,8 @@ export default function Faq() {
         <Heading as="h2" size="xl" mt={6} mb={2}>
           ¿Cómo conectar al paciente a mi monitor?
         </Heading>
-        { data.equipo.toLowerCase().includes("monitor") ?
-          <Text color={"gray.500"}>
+        {/* { data.equipo.toLowerCase().includes("monitor") ? */}
+          {/* <Text color={"gray.500"}>
             Como calibrar el sensor de capnografía de mi monitor:
 
             Debe realizar la puesta a cero del sensor. Para garantizar la medición del módulo de CO2 con alta precisión, debe realizarse la puesta a cero de acuerdo con las siguientes sugerencias:
@@ -43,8 +43,8 @@ export default function Faq() {
             Durante el proceso de puesta a cero, el LED verde de la sonda parpadea durante aproximadamente 5 s.
             ADVERTENCIA
             EL proceso de puesta a cero de manera incorrecta y/o no realizar el proceso una vez que se instala el monitor en un quirofano nuevo, provocará resultados falsos de los grados de gas.
-          </Text>
-        :
+          </Text> */}
+        {/* : */}
           <Text color={"gray.500"}>
             El sensor se coloca normalmente en el dedo índice del paciente y se
             conecta al cable que va con el monitor.Los NO sobre la ubicación de
@@ -52,7 +52,7 @@ export default function Faq() {
             Electrodos cerca del corazón. Evitar muñecas y tobillos cuando sea
             posible.
           </Text>
-        }
+        {/* } */}
         <Button onClick={onOpen} marginTop={"20px"}>
           <Text fontSize="sm">Ver más</Text>
         </Button>
@@ -65,7 +65,7 @@ export default function Faq() {
           <ModalHeader>¿Cómo conectar al paciente a mi monitor?</ModalHeader>
           <ModalCloseButton />
           <ModalBody textAlign={"-webkit-center"}>
-          { data.equipo.toLowerCase().includes("monitor") ?
+          {/* { data.equipo.toLowerCase().includes("monitor") ?
           <Text color={"gray.500"}>
             Como calibrar el sensor de capnografía de mi monitor:
             <br />
@@ -76,7 +76,7 @@ export default function Faq() {
             <br />ADVERTENCIA
             <br />EL proceso de puesta a cero de manera incorrecta y/o no realizar el proceso una vez que se instala el monitor en un quirofano nuevo, provocará resultados falsos de los grados de gas.
           </Text>
-        :
+        : */}
             <Text w={"80%"} color={"gray.500"}>
               El sensor se coloca normalmente en el dedo índice del paciente y
               se conecta al cable que va con el monitor.
@@ -86,7 +86,7 @@ export default function Faq() {
               <br /> Electrodos cerca del corazón. <br />
               Evitar muñecas y tobillos cuando sea posible.
             </Text>
-        }
+        {/* } */}
             <Divider />
             <AspectRatio maxW="860px" maxH={"600px"} ratio={1}>
               <iframe
