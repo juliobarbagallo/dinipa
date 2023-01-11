@@ -52,7 +52,7 @@ export default function NavBar() {
               <NavLink>
                 <Link
                   href="https://facebook.com/dinipamedical/"
-                  passHref={true}               
+                  // passHref={true}               
                 >
                   <a target="_blank" rel="noreferrer">
                     {<BsFacebook size={30} />}
@@ -92,7 +92,7 @@ export default function NavBar() {
               <NavLink>
                 <Link
                   href="https://facebook.com/dinipamedical/"
-                  passHref={true}               
+                  // passHref={true}               
                 >
                   <a target="_blank" rel="noreferrer">
                     {<BsFacebook size={30} />}

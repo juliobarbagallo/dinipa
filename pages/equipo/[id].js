@@ -49,6 +49,12 @@ export const getStaticPaths = async () => {
 
 export default function Equipo({ equipo }) {
   // console.log(equipo, '  EQUIPO')
+  let pedidosHref = '/Request/Request';
+
+  if (equipo && equipo.pedido) {
+    pedidosHref = equipo.pedido;
+  }
+
   return (
     <div className="container">
       <NavBar />
@@ -142,7 +148,12 @@ export default function Equipo({ equipo }) {
                           <a>Whatsapp</a>
                         </ListItem>
                       </Link>
-                      <Link href="/faq/Faq">
+                      <Link
+                        href={{
+                          pathname: "/faq/Faq",
+                          query: {equipo: equipo.nombre}
+                        }}
+                      >
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                             <BsQuestionCircle />
@@ -165,15 +176,15 @@ export default function Equipo({ equipo }) {
                       </Link>
                     </List>
                     <List spacing={2}>
-                      <Link href="/Report/Report">
+                      <Link href="/Report/Report">                      
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                             <VscReport />
                           </Text>{" "}
                           Reportar inconveniente
                         </ListItem>
-                      </Link>
-                      <Link href="/Request/Request">
+                      </Link>                      
+                      <Link href={pedidosHref}>
                         <ListItem cursor={"pointer"}>
                           <Text as={"span"} fontWeight={"bold"} fontSize={"30"}>
                             <BsCart3 />
