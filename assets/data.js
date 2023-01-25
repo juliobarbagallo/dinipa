@@ -104,6 +104,7 @@ export const equipos = [
     imagen: "/ECG300.jpg",
     catalogo: "https://drive.google.com/file/d/1486NSvDaZWcaRV-8AcRuk-lyFLytPAGf/view?usp=sharing",
     Manual:"https://drive.google.com/file/d/1dZvo5Bz4uln9HO9QCsVZ9MRuSUK7WTLX/view?usp=sharing" ,
+    pedido: "https://dinipamedical.mercadoshops.com.ar/listado/salud-equipamiento-medico/equipamiento-medico/equipos-monitoreo/electrocardiografos/",
   },
  {
     id: "equipo11",
